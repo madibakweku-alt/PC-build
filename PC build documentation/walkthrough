@@ -1,0 +1,164 @@
+ 🖥️ Cybersecurity Workstation PC Build
+
+ 📌 Overview
+This project documents the end-to-end process of building and configuring a custom desktop PC designed for cybersecurity tasks such as virtualization, ethical hacking, and digital forensics.
+
+The goal was to create a **high-performance and stable environment** capable of running multiple virtual machines while maintaining strong system performance and reliability.
+
+---
+
+ ⚙️ System Specifications
+
+| Component | Specification |
+|----------|-------------|
+| CPU | Intel Core i7-14700KF |
+| Motherboard | MSI B760M Gaming Plus WiFi |
+| GPU | Gigabyte Gaming OC Radeon RX 9060 XT 16GB |
+| RAM | 32GB DDR5 (6000 MHz, XMP enabled) |
+| Storage | Kingston NV3 1TB NVMe SSD |
+| Cooling | Corsair Nautilus 360mm AIO |
+| PSU | MSI MAG A750GL 750W (Modular) |
+| Case | Cooler Master MasterBox 600 |
+| OS | Windows 11 Pro |
+| Display | Dual Monitor (HDMI → DisplayPort) |
+
+---
+
+🛠️ Build Process
+
+1. CPU Installation
+- Installed CPU into LGA1700 socket
+- Ensured correct alignment using triangle indicator
+
+ 2. Cooling Installation
+- Applied thermal paste
+- Mounted 360mm AIO radiator at top for exhaust airflow
+
+ 3. RAM Installation
+- Installed RAM in A2 and B2 slots
+- Enabled dual-channel configuration
+
+ 4. Storage Installation
+- Installed NVMe SSD into M.2 slot
+- Applied motherboard heatsink
+
+ 5. Motherboard Installation
+- Mounted motherboard with standoffs
+- Verified I/O alignment
+
+6. Power Supply & Cabling
+- Connected:
+  - 24-pin motherboard cable
+  - 8-pin CPU cable
+  - PCIe GPU cables
+  - SATA cables
+
+ 7. GPU Installation
+- Inserted into PCIe x16 slot
+- Connected power cables
+
+ 8. Front Panel Setup
+- Connected power switch and LED headers to JFP1
+
+---
+ 🚀 First Boot & BIOS Configuration
+
+Entered BIOS and configured:
+
+- Enabled XMP → RAM running at 6000 MHz  
+- Enabled Intel Virtualization (VT-x & VT-d)  
+- Set Boot Mode to UEFI  
+
+---
+
+ 🐛 Troubleshooting & Debugging
+
+🔴 Issue 1: PC Not Turning On
+- Cause: SATA cable not connected  
+- Fix: Reconnected SATA cable properly  
+
+---
+
+ 🔴 Issue 2: CPU Debug LED
+- Cause: RAM not seated correctly  
+- Insight: Improper RAM seating prevented CPU initialization  
+- Fix: Reseated RAM until fully locked  
+
+---
+
+ 🔴 Issue 3: AIO Fans Not Working
+- Cause: Fan cables not connected to motherboard  
+- Fix: Connected radiator fans to fan headers  
+
+---
+
+ 💻 Operating System Setup
+
+- Created bootable USB  
+- Installed Windows 11 Pro  
+- Installed drivers:
+  - Chipset
+  - GPU
+  - Network  
+
+---
+ 🔐 Cybersecurity Optimisation
+
+Virtualisation
+- Enabled Hyper-V support
+- Prepared system for multiple VMs
+
+Performance
+- Enabled XMP for maximum memory speed
+- Optimised BIOS settings for stability
+
+Environment Setup
+- Host OS → secure environment  
+- Virtual Machines → testing & lab environments  
+
+---
+
+ 🖥️ Final Setup
+
+- Dual monitor configuration using GPU outputs  
+- Wireless connectivity configured  
+- System tested for stability under load  
+
+---
+
+🧠 Key Learnings
+
+- Hardware issues are often **connection-related, not component failure**
+- Debug LEDs are critical for diagnosing boot issues
+- Proper cable management impacts both functionality and airflow
+- BIOS configuration plays a major role in system performance
+
+---
+
+ 🎯 Outcome
+
+The system is now fully operational and optimised for:
+
+- Virtual Machine environments  
+- Ethical hacking labs  
+- Digital forensics workflows  
+
+---
+
+ 📷 Future Improvements
+
+- Add build photos  
+- Include airflow diagram  
+- Document VM lab setup  
+- Add benchmarking results  
+
+---
+
+ 🚀 Author Notes
+
+This project reflects hands-on experience in:
+- System assembly  
+- Troubleshooting  
+- Performance tuning  
+- Cybersecurity environment preparation  
+
